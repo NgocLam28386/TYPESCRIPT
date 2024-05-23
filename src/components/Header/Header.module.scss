@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: rgba($color: #fff, $alpha: 0.6);
+  box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    li {
+      margin-right: 24px;
+      .navItem {
+        color: blue;
+        font-size: 20px;
+        font-weight: 800;
+        transition: all 0.3s ease-in-out;
+        padding: 12px 12px 6px;
+        text-decoration: none;
+        border-bottom: 4px transparent solid;
+        &:hover {
+          color: rgba(53, 53, 136, 0.8);
+          border-bottom: 4px rgb(53, 53, 136) solid;
+        }
+      }
+    }
+  }
+}
